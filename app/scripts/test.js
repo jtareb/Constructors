@@ -12,7 +12,8 @@ var Human = function(options){
                   dog.hungry=false;
                   };
 
-                  
+      this.cool = options.cool || false;
+
       };
       
 var Dog = function(options){

@@ -50,7 +50,7 @@ var Human = function(options){
                   dog.hungry=false;
                   };
 
-      this.cool = options.cool;
+      this.cool = options.cool || false;
 };
 
                   
@@ -63,7 +63,7 @@ var Dog = function(options){
 
     this.status = 'normal' || options.status;
     this.color = 'black' || options.color;    
-    this.hungry = options.hungry;
+    this. hungry = (options.hungry===false) ? false:true;
 
       
     
