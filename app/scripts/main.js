@@ -1,17 +1,5 @@
-/* This repository
-Explore
-Gist
-Blog
-Help
-John Albritton jtareb
+
  
-2  Watch 
-  Star 1
- Fork 2tiy-atl-js-q1-2015/Assignments
- branch: master  Assignments/Assignment 13/constructors.js
-Tim Whitacretwhitacre an hour ago Add Assignment 13
-1 contributor
-117 lines (93 sloc)  3.255 kb RawBlameHistory   
 // Hey Iron Yard Hackers! Enjoy!
 // Make sure to open your js consoles!
 
@@ -47,37 +35,37 @@ function expect(target) {
 //  / ___/ __ \/ __ \/ ___/ __/ ___/ / / / ___/ __/ __ \/ ___/ ___/
 // / /__/ /_/ / / / (__  ) /_/ /  / /_/ / /__/ /_/ /_/ / /  (__  )
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
-//*/
-
-
+//
+// Only add code to *THIS* section!
 var Human = function(options){
     
     var options = options || {};
 
       this.pet = function(dog){
-                  dog.status="happy";
+                  dog.status='happy';
                    };
 
       this.feed = function(dog){
                   dog.hungry=false;
                   };
 
+      this.cool = true || options.cool;
+};
+
                   
-      };
       
-    
-
-
-
-
-
 var Dog = function(options){
 
   var options = options || {};
 
-    
+
+
+   
     this.color = 'black' || options.color;    
-    this.hungry = true || options.hungry;
+    this.hungry = false || options.hungry;
+    
+
+
 
 };
 
@@ -85,7 +73,12 @@ var Dog = function(options){
 
 
 
-
+//        __
+//   ____/ /___  ____ ______
+//  / __  / __ \/ __ `/ ___/s
+// / /_/ / /_/ / /_/ (__  )
+// \__,_/\____/\__, /____/
+//            /____/
 
 var sadie = new Dog({
   color: "black",
@@ -98,6 +91,13 @@ var moonshine = new Dog({
 
 var atticus = new Dog();
 
+
+//     __
+//    / /_  __  ______ ___  ____ _____  _____
+//   / __ \/ / / / __ `__ \/ __ `/ __ \/ ___/
+//  / / / / /_/ / / / / / / /_/ / / / (__  )
+// /_/ /_/\__,_/_/ /_/ /_/\__,_/_/ /_/____/
+
 var mason = new Human();
 
 var julia = new Human({
@@ -105,23 +105,7 @@ var julia = new Human({
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
+//                     __           __  __    _                             __
 //    ____ ___  ____ _/ /_____     / /_/ /_  (_)____   _      ______  _____/ /__
 //   / __ `__ \/ __ `/ //_/ _ \   / __/ __ \/ / ___/  | | /| / / __ \/ ___/ //_/
 //  / / / / / / /_/ / ,< /  __/  / /_/ / / / (__  )   | |/ |/ / /_/ / /  / ,<
