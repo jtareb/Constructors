@@ -41,15 +41,16 @@ var Human = function(options){
     
     var options = options || {};
 
+
       this.pet = function(dog){
-                  dog.status='happy';
+                  dog.status="happy";
                    };
 
       this.feed = function(dog){
                   dog.hungry=false;
                   };
 
-      this.cool = true || options.cool;
+      this.cool = options.cool || false;
 };
 
                   
@@ -60,9 +61,9 @@ var Dog = function(options){
 
 
 
-   
+    this.status = 'normal' || options.status;
     this.color = 'black' || options.color;    
-    this.hungry = false || options.hungry;
+    this.hungry = (options.hungry==='false') ? true:false;
     
 
 
